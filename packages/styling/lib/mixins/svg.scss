@@ -1,0 +1,14 @@
+@mixin color-svg($color) {
+  svg {
+    fill: $color;
+  }
+}
+
+@mixin size-svg($height, $width: $height) {
+  svg {
+    min-width: $width;
+    max-width: $width;
+    min-height: $height;
+    max-height: $height;
+  }
+}

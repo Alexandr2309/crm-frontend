@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "index.d.ts"
+  ],
+  "compilerOptions": {
+    "types": [
+      "vite/client",
+      "vite-plugin-svgr/client"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+@import '@bnetex/styling/lib';
+
+.container {
+  position: fixed;
+  right: 16px;
+  z-index: 9999;
+  width: min(450px, calc(100vw - 32px));
+  transition: padding-top $default-transition;
+
+  &:hover {
+    padding-top: 32px;
+  }
+
+  &:not(:hover) {
+    padding-top: 16px;
+    animation: empty 0;
+  }
+}
+
+.content {
+  position: relative;
+}
+
+/* stylelint-disable-next-line block-no-empty */
+@keyframes empty {
+}

@@ -1,0 +1,9 @@
+@import 'reset';
+@import 'colors/generator';
+@import 'colors/map';
+@import 'font/fontMap';
+@import 'variables';
+
+html {
+  overscroll-behavior: none;
+}

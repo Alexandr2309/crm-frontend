@@ -1,0 +1,22 @@
+{
+  "extends": "@22byte/config/vite.json",
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+}

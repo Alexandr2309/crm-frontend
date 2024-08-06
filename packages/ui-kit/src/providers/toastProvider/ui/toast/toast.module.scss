@@ -1,0 +1,76 @@
+@import '@22byte/styling/lib';
+
+.content {
+  @include flex-row-center(12px);
+  @extend %text;
+
+  transition: max-height $default-transition, opacity $default-transition;
+  color: $grayscale-10;
+  max-height: var(--content-max-height);
+  opacity: var(--content-opacity);
+  overflow: hidden;
+}
+
+.container {
+  @include toast-shadow;
+  @include flex-col(8px);
+
+  position: absolute;
+  right: 0;
+  padding: 12px;
+  border-radius: 8px;
+  transition: transform $default-transition, top $default-transition;
+  background-color: $grayscale-1;
+  width: min(450px, calc(100vw - 32px));
+  animation: fade-in $default-transition 1 forwards;
+  overflow: hidden;
+  border: 1px solid $grayscale-4;
+
+  &--unwrapped {
+    .content {
+      max-height: unset !important;
+      opacity: 1 !important;
+    }
+
+    transform: translate3d(0, var(--y), var(--z)) scale(1) !important;
+  }
+}
+
+.icon-wrapper {
+  @include size-svg(20px);
+
+  max-height: 32px;
+  padding: 6px;
+  border-radius: 4px;
+
+  &--info {
+    color: $blue-1;
+    background-color: $blue-6;
+  }
+
+  &--success {
+    color: $green-1;
+    background-color: $green-6;
+  }
+
+  &--error {
+    color: $red-1;
+    background-color: $red-6;
+  }
+}
+
+.message-wrapper {
+  flex-grow: 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    top: -32px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}

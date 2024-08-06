@@ -1,0 +1,25 @@
+{
+  "name": "@22byte/ui-kit",
+  "version": "1.0.0",
+  "exports": {
+    "./theme": "./src/providers/themeProvider/index.ts",
+    "./appLoader": "./src/ui/appLoader/index.ts"
+  },
+  "scripts": {
+    "lint": "npm run lint:ts && npm run lint:scss",
+    "lint:ts": "eslint \"**/*.{ts,tsx}\"",
+    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "lint:scss": "npx stylelint \"**/*.scss\"",
+    "lint:scss:fix": "npx stylelint \"**/*.scss\""
+  },
+  "devDependencies": {
+    "@22byte/config": "*",
+    "eslint": "8.57.0",
+    "eslint-config-22byte": "*",
+    "react": "18.3.1",
+    "stylelint-config-22byte": "*"
+  },
+  "dependencies": {
+    "@22byte/shared": "*"
+  }
+}

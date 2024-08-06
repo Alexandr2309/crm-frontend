@@ -1,0 +1,9 @@
+{
+  "name": "stylelint-config-22byte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "stylelint": "16.7.0",
+    "stylelint-config-standard-scss": "13.1.0"
+  }
+}

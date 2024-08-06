@@ -1,0 +1,1 @@
+export {createLocalStorageController} from './createLocalStorageController';

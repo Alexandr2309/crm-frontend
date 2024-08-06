@@ -1,0 +1,38 @@
+# env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# dependencies
+/node_modules
+node_modules
+
+# production
+/build
+/dist
+/lib
+build.zip
+build.rar
+dist
+.next
+
+# misc
+.DS_Store
+npm-debug.log*
+
+# cypress logs
+/cypress/videos
+*.mp4
+
+# turbo
+.turbo
+.cache
+
+#vscode
+.vscode
+.vscode/
+
+#jetbrains
+.idea

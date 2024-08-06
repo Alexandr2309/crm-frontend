@@ -1,0 +1,19 @@
+{
+  "name": "@22byte/shared",
+  "version": "1.0.0",
+  "exports": {
+    "./const": "./src/const/index.ts",
+    "./types": "./src/types/index.ts",
+    "./storage": "./src/utils/storage/index.ts",
+    "./miscUtils": "./src/utils/miscellaneous/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint \"**/*.{ts,tsx}\""
+  },
+  "devDependencies": {
+    "@22byte/config": "*",
+    "eslint": "8.57.0",
+    "eslint-config-22byte": "*",
+    "react": "18.3.1"
+  }
+}
