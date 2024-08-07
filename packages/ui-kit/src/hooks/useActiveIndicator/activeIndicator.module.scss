@@ -1,0 +1,9 @@
+@import '@frontend/styling/lib';
+
+.indicator {
+    position: absolute;
+    transition: opacity $default-transition, width $default-transition;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+}

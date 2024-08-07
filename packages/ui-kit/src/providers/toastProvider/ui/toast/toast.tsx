@@ -8,7 +8,7 @@ import Cross from '@bnetex/icons/cross.svg';
 import Check from '@bnetex/icons/check.svg';
 import CrossCircle from '@bnetex/icons/cross-circle.svg';
 import Info from '@bnetex/icons/info.svg';
-import { useTimer } from '@bnetex/shared/hooks';
+import { useTimer } from '@22byte/shared/hooks';
 
 interface ToastProps extends ToastInterface {
     id: string;

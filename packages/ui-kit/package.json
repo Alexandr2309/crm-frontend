@@ -4,7 +4,8 @@
   "exports": {
     "./theme": "./src/providers/themeProvider/index.ts",
     "./appLoader": "./src/ui/appLoader/index.ts",
-    "./toast": "./src/providers/toastProvider/index.ts"
+    "./toast": "./src/providers/toastProvider/index.ts",
+    "./hooks": "./src/hooks/index.ts"
   },
   "scripts": {
     "lint": "npm run lint:ts && npm run lint:scss",

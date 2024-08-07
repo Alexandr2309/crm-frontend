@@ -2,7 +2,7 @@ import { MutableRefObject, forwardRef } from 'react';
 import { ToastControlsMap, ToastMap, ToasterHeightTuple } from '../../lib/context/toastContext';
 import s from './toaster.module.scss';
 import { Toast } from '../toast/toast';
-import { useBooleanState } from '@bnetex/shared/hooks';
+import { useBooleanState } from '@22byte/shared/hooks';
 
 interface ToasterProps {
     toastMap: ToastMap;

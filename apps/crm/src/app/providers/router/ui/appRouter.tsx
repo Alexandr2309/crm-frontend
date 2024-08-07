@@ -23,7 +23,7 @@ const AppRouter = memo(() => {
                         </AuthRequiredWrapper>
                     )
                     : element
-            }
+                }
             >
                 {route.children}
             </Route>

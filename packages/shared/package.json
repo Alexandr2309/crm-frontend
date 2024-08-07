@@ -5,7 +5,8 @@
     "./const": "./src/const/index.ts",
     "./types": "./src/types/index.ts",
     "./storage": "./src/utils/storage/index.ts",
-    "./miscUtils": "./src/utils/miscellaneous/index.ts"
+    "./miscUtils": "./src/utils/miscellaneous/index.ts",
+    "./hooks": "./src/hooks/index.ts"
   },
   "scripts": {
     "lint": "eslint \"**/*.{ts,tsx}\""

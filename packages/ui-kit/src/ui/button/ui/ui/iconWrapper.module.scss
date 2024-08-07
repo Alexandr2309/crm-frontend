@@ -1,0 +1,21 @@
+@import '@bnetex/styling/lib';
+
+.icon-wrapper {
+  --col-gap: 8px;
+
+  @include flex-row-center(var(--col-gap));
+
+  width: 100%;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &_align--right {
+    flex-direction: row-reverse;
+  }
+
+  &_gap--s {
+    column-gap: 4px;
+  }
+}
