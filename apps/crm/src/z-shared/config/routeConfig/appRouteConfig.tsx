@@ -1,15 +1,22 @@
-import { RouteProps } from 'react-router-dom';
+import { Navigate, RouteProps } from 'react-router-dom';
 import { appRoutePaths, AppRoutes } from './lib/const/appRoute';
-import { MainPage } from '@/pages/main';
 import { AboutPage } from '@/pages/about';
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
         path: appRoutePaths[AppRoutes.MAIN],
-        element: <MainPage/>,
+        element: <Navigate to={appRoutePaths[AppRoutes.DASHBOARD]}/>,
     },
-    [AppRoutes.ABOUT]: {
-        path: appRoutePaths[AppRoutes.ABOUT],
+    [AppRoutes.AUTH]: {
+        path: appRoutePaths[AppRoutes.AUTH],
         element: <AboutPage/>,
+    },
+    [AppRoutes.NOT_FOUND]: {
+        path: appRoutePaths[AppRoutes.NOT_FOUND],
+        element: <div>Not found</div>,
+    },
+    [AppRoutes.DASHBOARD]: {
+        path: appRoutePaths[AppRoutes.DASHBOARD],
+        element: <div>Dashboard</div>,
     },
 };

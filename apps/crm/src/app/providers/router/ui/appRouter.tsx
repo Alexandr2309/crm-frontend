@@ -1,12 +1,12 @@
-import { routeConfig } from '@/z-shared/config/routeConfig';
-import { AppLoader } from '@frontend/ui-kit/appLoader';
+import { AppRoutesProps, routeConfig } from '@/z-shared/config/routeConfig';
 import { memo, Suspense, useCallback } from 'react';
-import { Route, RouteProps, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { AuthRequiredWrapper } from './authRequiredWrapper';
 
 const AppRouter = memo(() => {
-    const renderWithWrapper = useCallback((route: RouteProps) => {
+    const renderWithWrapper = useCallback((route: AppRoutesProps) => {
         const element = (
-            <Suspense fallback={<AppLoader/>}>
+            <Suspense fallback={<div>Loading...</div>}>
                 {route.element}
             </Suspense>
         );
@@ -14,9 +14,19 @@ const AppRouter = memo(() => {
         return (
             <Route
                 key={route.path}
-                path={route.path}
-                element={element}
-            />
+                path={route.children ? `${route.path}*` : route.path}
+                element={
+                route.authOnly
+                    ? (
+                        <AuthRequiredWrapper>
+                            {element}
+                        </AuthRequiredWrapper>
+                    )
+                    : element
+            }
+            >
+                {route.children}
+            </Route>
         );
     }, []);
 

@@ -18,8 +18,8 @@
     "vite-plugin-svgr": "4.2.0"
   },
   "workspaces": [
-    "/apps/*",
-    "packages/*"
+    "apps/**",
+    "packages/**"
   ],
   "packageManager": "npm@9.6.7",
   "dependencies": {
