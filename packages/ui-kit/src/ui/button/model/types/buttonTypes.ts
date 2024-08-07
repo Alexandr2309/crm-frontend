@@ -1,5 +1,5 @@
-import { SVGComponent } from '@frontend/shared/types';
-import { AccentColors } from '@frontend/shared/const';
+import { SVGComponent } from '@22byte/shared/types';
+import { AccentColors } from '@22byte/shared/const';
 import { ButtonHTMLAttributes, CSSProperties } from 'react';
 
 export enum ButtonVariant {
@@ -19,10 +19,11 @@ export interface BaseButtonProps {
     textWeight: 'default' | 'thin';
     icon: JSX.Element | SVGComponent;
     secondaryIcon?: JSX.Element | SVGComponent;
-    iconAligment: 'left' | 'right';
+    iconAlignment: 'left' | 'right';
     theme?: AccentColors;
     fillContainer?: boolean;
     justifyCenter?: boolean;
+    justify?: 'space-between' | 'start' | 'end';
     showLoader?: boolean;
 }
 

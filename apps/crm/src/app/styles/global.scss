@@ -1,0 +1,45 @@
+@import '@22byte/styling/lib/global';
+@import './lib/appVariables';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: Rubik, sans-serif;
+}
+
+.app {
+  @include create-css-themes-root;
+
+  background-color: $grayscale-1;
+  color: $grayscale-10;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.layout {
+  flex-grow: 1;
+  display: grid;
+  grid-template: 1fr / minmax(80px, 280px) 1fr;
+  overflow: hidden;
+  padding-top: $header-height;
+}
+
+.card {
+  background-color: $grayscale-card;
+  border: 1px solid $grayscale-4;
+  border-radius: 8px;
+}
+
+.app-label {
+  @extend %caption;
+
+  color: $grayscale-8;
+}
+
+.app-label-mini {
+  @extend %caption-mini;
+
+  color: $grayscale-8;
+}

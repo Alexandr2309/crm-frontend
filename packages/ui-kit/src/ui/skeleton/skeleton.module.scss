@@ -1,0 +1,28 @@
+@import '@bnetex/styling/lib';
+
+.skeleton {
+  animation: oscillating 2s ease infinite;
+
+  &--composite {
+    background-color: $grayscale-5;
+  }
+
+  &--base {
+    background-color: $grayscale-3;
+  }
+
+  &--rect,
+  &--square {
+    border-radius: 4px;
+  }
+
+  &--square,
+  &--circle {
+    aspect-ratio: 1;
+    width: fit-content;
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+}

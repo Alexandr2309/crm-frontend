@@ -5,7 +5,9 @@
     "./theme": "./src/providers/themeProvider/index.ts",
     "./appLoader": "./src/ui/appLoader/index.ts",
     "./toast": "./src/providers/toastProvider/index.ts",
-    "./hooks": "./src/hooks/index.ts"
+    "./hooks": "./src/hooks/index.ts",
+    "./button": "./src/ui/button/index.ts",
+    "./skeleton": "./src/ui/skeleton/index.ts"
   },
   "scripts": {
     "lint": "npm run lint:ts && npm run lint:scss",

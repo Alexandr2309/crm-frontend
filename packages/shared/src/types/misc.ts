@@ -9,6 +9,6 @@ export type AnyObject = Record<string, unknown>;
 
 export type FCC<P = AnyObject> = React.FC<React.PropsWithChildren<P>>;
 
-export type WithClassname = {
+export type WithClassName = {
     className?: string;
 }

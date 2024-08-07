@@ -6,6 +6,7 @@
     "./types": "./src/types/index.ts",
     "./storage": "./src/utils/storage/index.ts",
     "./miscUtils": "./src/utils/miscellaneous/index.ts",
+    "./arrayUtils": "./src/utils/arrayUtils/index.ts",
     "./hooks": "./src/hooks/index.ts"
   },
   "scripts": {
